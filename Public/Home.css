@@ -1,7 +1,27 @@
-button{
-    color: aqua;
+button.background{
+    color: white;
+    outline: auto;
+
 
 }
 body{
-    background-color: aquamarine;
+    background-color: burlywood;
+}
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+ul{
+    text-align: end;
+    text-wrap:balance;
+    margin-left:auto;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+a:hover{
+        background-color: white;
+        outline: auto;   
 }

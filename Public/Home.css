@@ -4,8 +4,7 @@ div.header{
     border-radius: 7px;
 }
 body{
-    background-image: image('backgroundPicture.jpg');
-    margin: auto;
+    background-image: linear-gradient(to right, rgb(92, 245, 58),rgb(235, 195, 33));
 }
 div.wrapper{
     backdrop-filter: blur(5.5px);

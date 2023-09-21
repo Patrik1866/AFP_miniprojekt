@@ -10,17 +10,19 @@
     <div class="header">
         <h1>Viccportál</h1>
     </div>  
-    <div class="wrapper">
-        <section>
-            <div>    
-                <button class="button"><a href="Login.html" style="text-decoration: none;">Bejelentkezés</a></button>
-            </div>
-            <div>
-                <button class="button"><a href="Register.html" style="text-decoration: none;">Regisztráció</a></button>
-            </div>
-        </section>
-    </div>
-</section>
+    <form>
+        <div>
+            <label class="forma" for="uname"><b>Felhasználónév</b></label>
+        </div>
+            <input class="data" type="text" name="uname" required>
+        <div>
+            <label class="forma" for="psw"><b>Jelszó</b></label>
+        </div>
+            <input class="data" type="password" name="psw" required>
+        <div>
+            <button class="submit-button" type="submit">Bejelentkezés</button>
+        </div>
+</form>
     
 </body>
 </html>

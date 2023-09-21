@@ -6,29 +6,6 @@ div.header{
 body{
     background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(83, 82, 80));
 }
-div.wrapper{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.01);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
-    color: black;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.30);
-    border: 1px solid rgba(255,255,255, 0.34);
-    flex-basis: 400px;
-    height: 130px;
-    width: 300px;
-    padding: 20px 25px;
-    justify-content: center;
-    align-self: center;
-    vertical-align: middle;
-    margin-left: 39%;
-    margin: auto;
-    
-}
 .button{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -48,3 +25,43 @@ div.wrapper{
 button:hover{
     background-color: brown;
 }
+form{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255,255,255, 0.34);
+    flex-basis: 400px;
+    height: 450px;
+    width: 300px;
+    padding: 20px 25px;
+    justify-content: center;
+    align-self: center;
+    vertical-align: middle;
+    margin-left: 39%;
+    margin: auto;
+}
+div{
+    text-align: left;
+    align-items: center;
+    margin: auto;
+}
+.forma{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.data{
+    border-radius: 10px;
+    width: 300px;
+    height: 25px;
+}
+.submit-button{
+    border-radius: 8px;
+}
+

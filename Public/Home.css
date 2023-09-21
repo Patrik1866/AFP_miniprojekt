@@ -4,7 +4,7 @@ div.header{
     border-radius: 7px;
 }
 body{
-    background-image: image('backgroundPicture.jpg');
+    background-image: image('/backgroundPicture.jpg');
     margin: auto;
 }
 div.wrapper{

@@ -1,27 +1,51 @@
-button.background{
-    color: white;
-    outline: auto;
-
-
+div.header{
+    text-align: center;
+    margin-bottom: 5%;
+    border-radius: 7px;
 }
 body{
-    background-color: burlywood;
+    background-image: image('backgroundPicture.jpg');
+    margin: auto;
 }
-h1{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    text-transform: uppercase;
-    margin-top: auto;
+div.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
+    color: black;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255,255,255, 0.34);
+    flex-basis: 400px;
+    height: 130px;
+    width: 300px;
+    padding: 20px 25px;
+    justify-content: center;
+    align-self: center;
+    vertical-align: middle;
+    margin-left: 39%;
+    margin: auto;
+    
 }
-ul{
-    text-align: end;
-    text-wrap:balance;
-    margin-left:auto;
-    margin-right: 15px;
-    text-decoration: underline;
+.button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.01);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    height: 35px;
+    width: 130px;
+    align-items: center;
+    font-size: larger;
 }
-a:hover{
-        background-color: white;
-        outline: auto;   
+button:hover{
+    background-color: brown;
 }

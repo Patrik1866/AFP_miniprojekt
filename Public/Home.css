@@ -1,10 +1,15 @@
 div.header{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     border-radius: 7px;
+    margin-top: 5%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(83, 82, 80));
+    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
+}
+html{
+    height: 100%;
 }
 .button{
     backdrop-filter: blur(5.5px);
@@ -26,16 +31,11 @@ button:hover{
     background-color: brown;
 }
 form{
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.01);
     color: black;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.30);
     border: 1px solid rgba(255,255,255, 0.34);
     flex-basis: 400px;
     height: 450px;
@@ -44,24 +44,65 @@ form{
     justify-content: center;
     align-self: center;
     vertical-align: middle;
-    margin-left: 39%;
-    margin: auto;
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    
 }
 div{
     text-align: left;
     align-items: center;
     margin: auto;
 }
-.forma{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10pt;
+.forma1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
 }
-.data{
+
+.forma2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.data1{
+    border-radius: 10px;
+    border-style: none;
+    width: 300px;
+    height: 25px;
+    font-size: 11pt;
+    padding: 3px;
+}
+.data2{
     border-radius: 10px;
     width: 300px;
     height: 25px;
+    border-style: none;
+    font-size: 11pt;
+    padding: 3px;
 }
-.submit-button{
-    border-radius: 8px;
+.password_text_input_2{
+    margin-top: 35px;
+}
+.submit_button{
+    margin-top: 40px;
+    border-radius: 8px; 
+    margin-left: 50px;
+    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-size: 12pt;
+    border-style: none;
+}
+.register_text{
+    margin-top: 130px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:visited{
+    color: black;
 }
 

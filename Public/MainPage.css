@@ -1,0 +1,40 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+ /* .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }*/
+
+  body{
+    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
+  }
+
+  html{
+    height: 100%;
+  }
+
+  #logout{
+    margin-inline-end: auto;
+  }

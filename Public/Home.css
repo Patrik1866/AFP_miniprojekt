@@ -27,9 +27,7 @@ html{
     align-items: center;
     font-size: larger;
 }
-button:hover{
-    background-color: brown;
-}
+
 form{
     background: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.01);
@@ -103,6 +101,10 @@ div{
 }
 
 a:visited{
+    color: black;
+}
+
+a:link{
     color: black;
 }
 

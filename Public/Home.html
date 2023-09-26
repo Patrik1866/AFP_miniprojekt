@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Home.css">
-    <title>Home Page</title>
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
 </head>
-<body> 
-    <form>
-        <div class="header">
-            <h1>Viccportál</h1>
-        </div> 
-        <div class="password_text_input_1">
-            <i class="fa fa-user icon"></i>
-            <label class="forma1" for="uname"><b>Felhasználónév</b></label>
-            <input class="data1" type="text" name="uname" required>
+<body>
+    <!-- Login Form -->
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Bejelentkezés</h2>
         </div>
-        <div class="password_text_input_2">
-            <i class="fa fa-key icon"></i>
-            <label class="forma2" for="psw"><b>Jelszó</b></label>
-            <input class="data2" type="password" name="psw" required>
-        </div>
-        <div>
-            <button class="submit_button" type="submit">Bejelentkezés</button>
-        </div>
-        <div class="register_text">
-            <a class="register_link" href="Register.html" style="text-decoration: none;">Regisztráció</a>
-        </div>
-</form>
-    
+        <form action="#" method="post">
+            <input type="text" class="form-input" name="username" placeholder="Felhasználónév" required><br><br>
+            <input type="password" class="form-input" name="password" placeholder="Jelszó" required><br><br>
+            <button class="button" type="submit">Bejelentkezés</button>
+        </form>
+        <p>Nem létezik még felhasználója? <a href="register.html">Regisztráljon itt</a></p>
+    </div>
 </body>
 </html>

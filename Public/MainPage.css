@@ -1,40 +1,75 @@
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgba(255, 255, 255, 0.75);
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: rgb(54, 54, 54);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
- /* .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }*/
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
 
-  body{
-    background: linear-gradient(109.6deg, rgb(5, 85, 84) 11.2%, rgb(64, 224, 208) 91.1%);
-  }
+/* Navigation bar */
+.navbar {
+  background-color: #34495e; /* Dark blue */
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  html{
-    height: 100%;
-  }
+/* Buttons */
+.button {
+  background-color: #3498db; /* Bright blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 3px;
+}
 
-  #logout{
-    margin-inline-end: auto;
-  }
+.button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Feed */
+.feed {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter */
+.filter-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+/* Style for category selection */
+select {
+  width: 100%;
+  padding: 10px;
+}

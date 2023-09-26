@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    background-color: #34495e; /* Dark blue */
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke; /* Dark text color */
+}
+
+/* Profile Info */
+.profile-info {
+    text-align: left;
+    margin-bottom: 20px;
+    color: whitesmoke; /* Dark text color */
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 3px;
+    text-decoration: none; /* Remove default link styles */
+    display: inline-block; /* Make it inline-block for consistent sizing */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Back Button Style */
+.back-button {
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 3px;
+    text-decoration: none; /* Remove default link styles */
+    display: inline-block; /* Make it inline-block for consistent sizing */
+}
+
+.back-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}

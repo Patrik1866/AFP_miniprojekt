@@ -33,33 +33,46 @@ Az alkalmazásunk nyílt forráskódú, bárki letöltheti/használhatja. Érté
 ## 6. Jelenlegi üzleti folyamatok modellje 
 
 6.1 Új viccek feltöltése 
+
     6.1.1 Kategória megadása 
+    
     6.1.2 Vicc leírása 
+    
     6.1.3 Regisztrált felhasználók és az admin végezheti 
 
 6.2 Feltöltött viccek szerkesztése 
+
     6.2.1 Vicc törlése => Szerkesztés gomb => Törlés 
+    
     6.2.2 Vicc módosítása => Szerkesztés gomb => Módosítás 
 
 
 ## 7. Igényelt üzleti folyamatok modellje 
 
 7.1 A nem regisztrált felhasználók jogai 
+
     7.1.1 Viccek megtekintése/megjelenítése 
 
  
 ## 8. Követelménylista 
 
 K1: Három különböző szerepkör kezelése (admin, vendég felhasználó, regisztrált felhasználó)  
+
 K2: Reszponzív weblap dizájn 
+
 K3: Viccek létrehozása felület => Viccek feltöltése 
+
 K4: Feltöltött viccek szerkesztése => Viccek törlése, módosítása 
+
 K5: Viccek megjelenítése => Viccek megjelenítése, kategóriára szűrés alapján megjelenítés 
+
 K6: Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása 
 
  
 ## 9. Fogalomtár 
 
 UI: User Interface, felhasználói felület. 
+
 Reszponzív: A felület mérete az eszköz képernyőjéhez igazodik, nem ugrik szét, nem csúsznak el az elemek. 
+
 Free of charge: Ingyenesen használható. 

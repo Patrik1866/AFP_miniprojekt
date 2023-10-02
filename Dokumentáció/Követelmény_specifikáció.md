@@ -56,17 +56,14 @@ Az alkalmazásunk nyílt forráskódú, bárki letöltheti/használhatja. Érté
  
 ## 8. Követelménylista 
 
-K1: Három különböző szerepkör kezelése (admin, vendég felhasználó, regisztrált felhasználó)  
-
-K2: Reszponzív weblap dizájn 
-
-K3: Viccek létrehozása felület => Viccek feltöltése 
-
-K4: Feltöltött viccek szerkesztése => Viccek törlése, módosítása 
-
-K5: Viccek megjelenítése => Viccek megjelenítése, kategóriára szűrés alapján megjelenítés 
-
-K6: Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása 
+| Id | Leírás |
+| --- | --- |
+| K1 | Három különböző szerepkör kezelése (admin, vendég felhasználó, regisztrált felhasználó) |
+| K2 | Reszponzív weblap dizájn |
+| K3 | Viccek létrehozása felület => Viccek feltöltése |
+| K4 | Feltöltött viccek szerkesztése => Viccek törlése, módosítása |
+| K5 | Viccek megjelenítése => Viccek megjelenítése, kategóriára szűrés alapján megjelenítés |
+| K6 | Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása |
 
  
 ## 9. Fogalomtár 

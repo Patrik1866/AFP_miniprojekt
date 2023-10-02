@@ -66,10 +66,8 @@ Az alkalmazásunk nyílt forráskódú, bárki letöltheti/használhatja. Érté
 | K6 | Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása |
 
  
-## 9. Fogalomtár 
+## 9. Fogalomszótár
 
-UI: User Interface, felhasználói felület. 
-
-Reszponzív: A felület mérete az eszköz képernyőjéhez igazodik, nem ugrik szét, nem csúsznak el az elemek. 
-
-Free of charge: Ingyenesen használható. 
+- UI: User Interface, felhasználói felület. 
+- Reszponzív: A felület mérete az eszköz képernyőjéhez igazodik, nem ugrik szét, nem csúsznak el az elemek. 
+- Free of charge: Ingyenesen használható. 

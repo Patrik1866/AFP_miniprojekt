@@ -12,6 +12,14 @@ Az általunk készített weboldal pontosan ezt a célt szolgálja.
 ## 4. Igényelt üzleti folyamatok modellje
 
 ## 5. Követelménylista
+| Id | Leírás |
+| --- | --- |
+| K1 | Három különböző szerepkör kezelése (admin, vendég felhasználó, regisztrált felhasználó) |
+| K2 | Reszponzív weblap dizájn |
+| K3 | Viccek létrehozása felület => Viccek feltöltése |
+| K4 | Feltöltött viccek szerkesztése => Viccek törlése, módosítása |
+| K5 | Viccek megjelenítése => Viccek megjelenítése, kategóriára szűrés alapján megjelenítés |
+| K6 | Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása |
 
 ## 6. Használati esetek
 

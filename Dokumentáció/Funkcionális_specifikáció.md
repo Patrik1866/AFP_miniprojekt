@@ -52,3 +52,6 @@ K4:-A felhasználó az "Edit" gombra kattintva módosíthatja a feltöltött vic
 K5:-A "Category" gomb lehetővé teszi hogy megadjuk a vicc kategóriáját, majd a "View" gombbal kilistázza azon kategória vicceit.
 
 ## 11. Fogalomszótár
+- UI: User Interface, felhasználói felület. 
+- Reszponzív: A felület mérete az eszköz képernyőjéhez igazodik, nem ugrik szét, nem csúsznak el az elemek. 
+- Free of charge: Ingyenesen használható. 

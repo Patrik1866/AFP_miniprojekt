@@ -19,14 +19,14 @@ A vicceknek a világa nagyon sokrétű, még kategóriákra bontva is nehezen le
 A megrendelő szeretné hogy akár a munkába menet, szabadidőben, szünetekben, várakozás közben az embereknek lehetőségük legyen egy helyen rengeteg vicc közül böngészni, így az unalmas és üres órákat helyettesítse szórakozással, valamint az új vicceket megörökíteni és eltárolni hogy mások is olvashassák.
 
 ## 5. Követelménylista
-| Id | Leírás |
-| --- | --- |
-| K1 | Három különböző szerepkör kezelése (admin, vendég felhasználó, regisztrált felhasználó) |
-| K2 | Reszponzív weblap dizájn |
-| K3 | Viccek létrehozása felület => Viccek feltöltése |
-| K4 | Feltöltött viccek szerkesztése => Viccek törlése, módosítása |
-| K5 | Viccek megjelenítése => Viccek megjelenítése, kategóriára szűrés alapján megjelenítés |
-| K6 | Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok tárolása |
+| Id | Név | Leírás |
+| ---| --- | ------ |
+| K1 | Regisztráció | Adatbázisban tároljuk az új felhasználók felhasználónevét és jelszavát |
+| K2 | Bejelentkezés | A felhasználók bejelentkeztetése a weboldalra a felhasználónevük és jelszavuk alapján, ezzel biztosítva a viccek böngészését és feltöltését |
+| K3 | Viccek feltöltése | A bejelentkezett felhasználóknak van lehetőségük új vicceket feltölteni kategóriák szerint |
+| K4 | Viccek szerkesztése | A bejelentkezett felhasználóknak van lehetőségük a feltöltött vicceken módosítani |
+| K5 | Viccek megjelenítése | A felhasználók szabadon böngészhetnek a viccek között kategóriákra lebontva |
+| K6 | Adatok tárolása | Adatbázissal történő kapcsolat létrehozása => Adatbázis kapcsolat, felhasználói adatok és viccek tárolása |
 
 ## 6. Használati esetek
 

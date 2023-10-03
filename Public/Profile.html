@@ -11,12 +11,31 @@
             <h2>Üdvözöllek, John Doe</h2>
         </div>
         <div class="profile-info">
-            <p>Username: johndoe123</p>
+            <p class="addparag" style="font-size:x-large;">Viccek hozzáadása</p>
         </div>
+        <form action="" method="post">
+            <p class="kategprarg">Kategória</p>
+            <input type="text" class="kateg_input" name="vicc_kateg" placeholder="Ide írd a kategóriát" required><br><br>
+            <p class="viccparag">Vicc</p>
+            <input type="textarea" class="vicc_input" id="inputvicc" name="vicc_input" placeholder="Ide írd a viccet" required><br><br>
+            <button class="button" type="submit">Feltöltés</button>
+        </form>
         <div class="profile-buttons">
             <button class="button" id="logout-button">Kijelentkezés</button>
             <a class="button back-button" href="MainPage.html">Vissza a főoldalra</a> <!-- Added button to go back to the main page -->
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Get a reference to the input field
+          var input = document.getElementById("inputvicc");
+      
+          // Add a focus event listener
+          input.addEventListener("focus", function () {
+            // Set the cursor position to the beginning of the input
+            input.setSelectionRange(0, 0);
+          });
+        });
+      </script>
 </body>
 </html>

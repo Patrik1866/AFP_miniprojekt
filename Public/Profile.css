@@ -18,20 +18,19 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    color: whitesmoke; /* Text color for the entire profile container */
 }
 
 /* Profile Header */
 .profile-header {
     text-align: center;
     margin-bottom: 20px;
-    color: whitesmoke; /* Dark text color */
 }
 
 /* Profile Info */
 .profile-info {
     text-align: left;
     margin-bottom: 20px;
-    color: whitesmoke; /* Dark text color */
 }
 
 /* Buttons */
@@ -63,9 +62,45 @@ body {
     border-radius: 3px;
     text-decoration: none; /* Remove default link styles */
     display: inline-block; /* Make it inline-block for consistent sizing */
+    margin-top: 25px;
+    height: 17px;
 }
 
 .back-button:hover {
     background-color: #2980b9; /* Darker blue on hover */
     transform: scale(1.05);
 }
+
+/* Additional Styles for the Form */
+/* Additional Styles for the Form */
+.kategpararg, .viccparag {
+    color: whitesmoke;
+    text-align: center; /* Align text to the left */
+    margin-left: 0;
+}
+
+.addparag{
+    text-align: center;
+}
+
+.kateg_input, .vicc_input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Increase the height of the "Vicc" input */
+.vicc_input {
+    height: 100px; /* Adjust the height as needed */
+}
+
+.kateg_input[type="submit"] {
+    background-color: #4caf50; /* Green */
+}
+
+.kateg_input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+

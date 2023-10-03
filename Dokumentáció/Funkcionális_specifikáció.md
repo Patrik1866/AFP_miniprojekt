@@ -38,6 +38,12 @@ K3,K4,K5 gombokkal a felhasználó tud vicceket feltölteni, törölni, böngés
 
 ## 8. Képernyőtervek
 
+### Bejelentkezési oldal
+![Screenshot](login.png)
+
+### Regisztrálási oldal
+![Screenshot](register.png)
+
 ## 9. Forgatókönyvek
 
 Az év bármely napján, bármely órában saját gondolatokat tölthet fel hogy mások is láthassák. 

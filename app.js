@@ -101,6 +101,23 @@ app.post('/logout', (req, res) => {
   });
 });
 
+app.post('/vicc_add', (req, res) => {
+  const { vicc_kateg, vicc_input } = req.body;
+
+  // Insert the form data into the database
+  const sql = 'INSERT INTO viccek (kategoria, vicc_tartalom) VALUES (?, ?)';
+  db.query(sql, [vicc_kateg, vicc_input], (err, result) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('Error adding joke');
+    } else {
+      console.log('Joke added successfully');
+      res.redirect('MainPage.html');
+    }
+	
+  });
+});
+
 // Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

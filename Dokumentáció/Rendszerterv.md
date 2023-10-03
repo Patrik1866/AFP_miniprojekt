@@ -103,3 +103,33 @@ COMMIT;
 ## 8. Implementációs terv
 
 A webes felület HTML, CSS és PHP nyelven fog elkészülni. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz. Az adatokat egy MYSQL adatbázisban fogjuk tárolni.
+
+## 9. Tesztterv
+
+Az alább leírt tesztelések célja a rendszer és funkcióinak teljes körű vizsgálata, ellenőrzése.
+
+Gombok, linkek tesztelése: tesztünk célja: a weboldalon megjelenő gombok és linkek megfelelő működésének ellenőrzése.
+Adatrögzítések leelenőrzése, hogy sikeresen feltöltődtek-e az adatbázisba. 
+Adatok betöltése az adatbázisból.
+
+Műveletek tesztelése: Törlés, módosítás, hozzáadás.
+A weboldal helyes működésének letesztelése különböző böngészőkben például Microsoft Edge, Google Chrome, Firefox…
+A weboldal hibátlan megfelelő megjelenés tesztelése számítógépen illetve mobiltelefonon.
+
+## 10. Telepítési terv
+
+A szoftver webes felületéhez csak egy böngésző telepítése szükséges.
+
+**Windows - Microsoft Edge**
+
+**Linux - Mozilla Firefox**
+
+**Mac - Safari**
+
+A webszerverre közvetlenül az internetről kapcsolódnak rá a kliensek. A weboldal URL címét szükséges ismerni és ezt beírni a böngésző címsorába.
+
+## 11. Karbantartási terv
+
+A felhasználók az oldalon megadott elérhetőségen jelenthetik be az esetlegesen felmerülő problémákat, hibákat, melyeket fejlesztőink javítanak.
+
+

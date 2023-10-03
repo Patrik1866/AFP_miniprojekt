@@ -57,3 +57,49 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
     - **Visual Studio Code**
     - **Notepad++**
     - **XAMPP**
+
+## 6. Architekturális terv
+
+A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A bootstrap mint CSS keretrendszer felel a reszponzív webdesign-ért. A backend php alapú.
+
+## 7. Adatbázis terv
+
+### **Táblák**
+- **posts:** Az oldalon létrehozott bejegyzések
+  - **pid:** Azonosító szám, a bejegyzések egyedi azonosítója
+  - **title:** A bejegyzések címe
+  - **comment:** A bejegyzések tartalma
+
+
+**DSL**
+
+
+```
+
+CREATE TABLE `posts` (
+  `pid` int(11) NOT NULL COMMENT 'A bejegyzések azonosító száma',
+  `title` varchar(100) NOT NULL COMMENT 'A bejegyzés címe',
+  `comment` text NOT NULL COMMENT 'A bejegyzés szöveges tartalma'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`pid`);
+
+
+
+ALTER TABLE `posts`
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'A bejegyzések azonosító száma';
+COMMIT;
+
+```
+
+
+**UML**
+
+
+
+## 8. Implementációs terv
+
+A webes felület HTML, CSS és PHP nyelven fog elkészülni. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz. Az adatokat egy MYSQL adatbázisban fogjuk tárolni.

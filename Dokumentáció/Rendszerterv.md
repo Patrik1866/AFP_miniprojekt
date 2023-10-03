@@ -25,3 +25,35 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
  - 10.03 Frontend design megtervezése
  - 10.04 Felhasználói felület kialakítása
 
+ ## 3. Követelmények
+
+**Funkcionális követelmények**
+  - **Felhasználó bejegyzéseinek tárolása**
+  - **Felhasználó tudják változtatni a bejegyzéseiket**
+  - **Felhasználó tudják módosítani és törölni a létrehozott bejegyzéseiket**
+
+  **Nem funkcionális követelmények**
+
+  **Törvényi előírások, szabványok:**
+  - **GDPR-nek való megfelelés**
+
+
+  ## 4. Funkcionális terv
+
+**Rendszerszereplők:**
+  - **Felhasználó**
+
+  **Rendszerhasználati esetek és lefutásaik:**
+  - **Felhasználó**
+    - **Megtekintheti a bejegyzéseket**
+    - **Törölheti a korábban létrehozott bejegyzéseket**
+    - **Módosíthatja a bejegyzéseket**
+  
+## 5. Fizikai környezet
+
+- **Az alkalmazás csak web platformra készül, AWS EC2 instance-ra telepített Apache szerveren, MySQL adatbázissal lesz futtatva.**
+  - **Nincsenek megvásárolt komponensek.**
+  - **Fejlesztői eszközök:**
+    - **Visual Studio Code**
+    - **Notepad++**
+    - **XAMPP**

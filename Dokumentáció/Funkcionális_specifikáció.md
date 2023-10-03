@@ -12,7 +12,7 @@ A megjelenést illetően törekednünk kell arra hogy az oldalt könnyen lehesse
 
 ## 3. Jelenlegi üzleti folyamatok modellje
 
-A vicceknek a világa nagyon sokrétű, még kategóriákra is bontva de nehezen lehet rájuk találni. Jelenleg új vicceket csak könyvekben olvashatuk, mémeken láthatunk, vagy esetleg szájról szájra terjednek. 
+A vicceknek a világa nagyon sokrétű, még kategóriákra bontva is nehezen lehet rájuk találni. Jelenleg új vicceket csak könyvekben olvashatuk, mémeken láthatunk, vagy esetleg szájról szájra terjednek. 
 
 ## 4. Igényelt üzleti folyamatok modellje
 
@@ -46,7 +46,9 @@ Használható akár borúsabb napokon, szabad órákban, társasági hangolatot 
 ## 10. Funckió - követelmény megfeleltetése
 
 K3:-A felhasználók a weboldalon a vicc szövegdobozba írása után a K3(submit) gombbal feltöltheti az adatbázisba a viccét.
+
 K4:-A felhasználó az "Edit" gombra kattintva módosíthatja a feltöltött vicceit esetleges elírás során. A "Delete" gombbal törölni tudja azt.
+
 K5:-A "Category" gomb lehetővé teszi hogy megadjuk a vicc kategóriáját, majd a "View" gombbal kilistázza azon kategória vicceit.
 
 ## 11. Fogalomszótár

@@ -57,7 +57,7 @@ Az alkalmazásunk nyílt forráskódú, bárki letöltheti/használhatja. Érté
 ## 8. Követelménylista 
 
 | Id | Név | | Leírás |
-| ---| --- |
+| ---| --- | | --- |
 | K1 | Regisztráció | Adatbázisban tároljuk az új felhasználók felhasználónevét és jelszavát |
 | K2 | Bejelentkezés | A felhasználók bejelentkeztetése a weboldalra a felhasználónevük és jelszavuk alapján, ezzel biztosítva a viccek böngészését és feltöltését |
 | K3 | Viccek feltöltése | A bejelentkezett felhasználóknak van lehetőségük új vicceket feltölteni kategóriák szerint |

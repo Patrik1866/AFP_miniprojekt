@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const path = require('path');
 const app = express();
+const session = require('express-session');
 
 // Create a MySQL database connection
 const db = mysql.createConnection({
@@ -12,8 +13,24 @@ const db = mysql.createConnection({
   database: 'viccportal_db',
 });
 
+app.use(session({
+  secret: ' ',
+  resave: false,
+  saveUninitialized: false,
+}));
+
 app.get('/', async (req, res) => {
-	res.sendFile(path.join(__dirname, 'Public', 'Home.html'));
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+  res.sendFile(path.join(__dirname, 'Public', 'Home.html'));
+});
+
+app.get('/', async (req, res) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+  res.sendFile(path.join(__dirname, 'Public', 'MainPage.html'));
 });
 
 // Connect to the database
@@ -55,7 +72,7 @@ app.post('/register', (req, res) => {
 
 app.post('/login', (req, res) => {
 	const { username, password } = req.body;
-  
+  const randomNumber = Math.random();
 	// Query the database to check if the user exists
 	const sql = 'SELECT * FROM viccportal WHERE username = ? AND password = ?';
 	db.query(sql, [username, password], (err, results) => {
@@ -67,10 +84,22 @@ app.post('/login', (req, res) => {
 	  } else {
 		// User is authenticated
 		console.log('User login successful')
-		res.redirect('MainPage.html')
+		res.redirect('MainPage.html?v=' + Date.now())
 	  }
 	});
+});
+
+app.post('/logout', (req, res) => {
+  // Clear the user session to perform logout
+  req.session.destroy((err) => {
+      if (err) {
+          console.error('Logout error:', err);
+          res.json({ success: false, message: 'An error occurred during logout' });
+      } else {
+        res.json({ success: true, message: 'Success' });
+      }
   });
+});
 
 // Start the server
 const PORT = process.env.PORT || 4000;

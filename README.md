@@ -8,5 +8,5 @@ Erdélyi Patrik - ZMU3AH
 
 Bárdos Botond - IDWPKQ
 
-Koczka Gergő - 
+Koczka Gergő - SR0D18
 

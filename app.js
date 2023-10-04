@@ -83,7 +83,7 @@ app.post('/login', (req, res) => {
 	  } else {
 		// User is authenticated
 		console.log('User login successful')
-		res.redirect('MainPage.html?loginSuccess=true');
+		res.redirect('MainPage.html?loginSuccess=true&user='+username);
 	  }
 	});
 });
@@ -118,8 +118,13 @@ app.post('/vicc_add', (req, res) => {
 });
 
 app.get('/api/data', (req, res) => {
-  // Query your database for the data
-  db.query('SELECT vicc_tartalom FROM viccek', (err, results) => {
+  var category = [];
+  var sql = 'SELECT vicc_tartalom FROM viccek';
+  if(req.params.get("category") != null){
+    var category = [req.params.get("category")];
+    var sql = 'SELECT vicc_tartalom FROM viccek WHERE kategoria = ?';
+  }
+  db.query(sql, category, (err, results) => {
       if (err) {
           console.error('Database query error: ' + err.message);
           res.status(500).json({ error: 'Internal Server Error' });

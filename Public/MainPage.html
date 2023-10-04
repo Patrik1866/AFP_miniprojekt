@@ -12,7 +12,7 @@
           <div>
           </div>
           <div>
-            <a class="button back-button" href="Profile.html" style="text-decoration: none;">Profil</a> <!-- Added button to go back to the main page -->
+            <a id="profbtn" class="button back-button" href="Profile.html" style="text-decoration: none;">Profil</a> <!-- Added button to go back to the main page -->
               <button id="logoutButton" class="button">Kijelentkezés</button>
           </div>
       </div>
@@ -53,11 +53,13 @@
 
       const urlParams2 = new URLSearchParams(window.location.search);
       const addSuccess = urlParams2.get('addSuccess');
+      const username = urlParams.get('username');
+      document.getElementById('profbtn').href = document.getElementById('profbtn').href + "?username=" + username;
 
       if (addSuccess === 'true'){
         alert('Sikeresen hozzáadtad a viccet!');
       }
-
+      
       function fetchFilteredJokes(){
         const selectedCategory = document.getElementById('categoryFilter').value;
 

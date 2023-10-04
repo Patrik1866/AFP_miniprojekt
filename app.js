@@ -80,11 +80,11 @@ app.post('/login', (req, res) => {
 		console.error(err);
 		res.status(500).send('Internal server error');
 	  } else if (results.length === 0) {
-		res.status(401).send('Authentication failed'); // User not found or incorrect password
+		res.redirect('Home.html?loginSuccess=false'); // User not found or incorrect password
 	  } else {
 		// User is authenticated
 		console.log('User login successful')
-		res.redirect('MainPage.html?v=' + Date.now())
+		res.redirect('MainPage.html?loginSuccess=true');
 	  }
 	});
 });

@@ -108,10 +108,10 @@ app.post('/vicc_add', (req, res) => {
   db.query(sql, [vicc_kateg, vicc_input], (err, result) => {
     if (err) {
       console.error(err);
-      res.status(500).send('Error adding joke');
+      res.redirect('Profile.html?addSuccess=false')
     } else {
       console.log('Joke added successfully');
-      res.redirect('MainPage.html');
+      res.redirect('MainPage.html?addSuccess=true');
     }
 	
   });

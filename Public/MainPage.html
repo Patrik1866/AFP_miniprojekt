@@ -49,6 +49,13 @@
       if (loginSuccess === 'true') {
           alert('Sikeres bejelentkezés!'); // Display an alert
       }
+
+      const urlParams2 = new URLSearchParams(window.location.search);
+      const addSuccess = urlParams2.get('addSuccess');
+
+      if (addSuccess === 'true'){
+        alert('Sikeresen hozzáadtad a viccet!');
+      }
   </script>
   </body>
   </html>

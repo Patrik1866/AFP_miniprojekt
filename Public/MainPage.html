@@ -20,13 +20,16 @@
       <!-- Main content -->
       <div class="filter-container">
         <h2>Kategória szűrés</h2>
-        <select class="filter">
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            <option value="category3">Category 3</option>
+        <select id="categoryFilter" class="filter">
+            <option value="anyos">Anyós</option>
+            <option value="favicc">Favicc</option>
+            <option value="rendor">Rendőr</option>
             <!-- Add more categories as needed -->
+            
         </select>
+        <button id="filterButton" class="button">Szűrés</button>
     </div>
+    
       <div class="main-content">
           <!-- Feed -->
           <div class="feed" id="viccfeed">
@@ -55,30 +58,54 @@
         alert('Sikeresen hozzáadtad a viccet!');
       }
 
-      fetch('/api/data')
-  .then(response => response.json())
-  .then(data => {
-    const viccfeed = document.getElementById('viccfeed');
+      function fetchFilteredJokes(){
+        const selectedCategory = document.getElementById('categoryFilter').value;
 
-    // Clear any existing content in viccfeed
-    viccfeed.innerHTML = '';
+    fetch(`/api/data?category=${selectedCategory}`)
+        .then(response => response.json())
+        .then(data => {
+            const viccfeed = document.getElementById('viccfeed');
+            viccfeed.innerHTML = ''; // Clear any existing content
 
-    // Iterate through the data and append jokes with spacing
-    data.forEach((item, index) => {
-      const jokeParagraph = document.createElement('p');
+            // Create a table element
+            const table = document.createElement('table');
 
-      // Access the "vicc_tartalom" property and set it as the text content
-      jokeParagraph.textContent = item.vicc_tartalom;
+            // Create table header
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            const headers = ['ID', 'Kategória', 'Vicc Tartalom']; // Column headers
+            headers.forEach(headerText => {
+                const th = document.createElement('th');
+                th.textContent = headerText;
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
 
-      viccfeed.appendChild(jokeParagraph);
+            // Create table body
+            const tbody = document.createElement('tbody');
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                const columns = ['id', 'kategoria', 'vicc_tartalom']; // Column names
+                columns.forEach(columnName => {
+                    const cell = document.createElement('td');
+                    cell.textContent = item[columnName];
+                    row.appendChild(cell);
+                });
+                tbody.appendChild(row);
+            });
+            table.appendChild(tbody);
 
-      // Add a line break after each joke, except for the last one
-      if (index < data.length - 1) {
-        viccfeed.appendChild(document.createElement('br'));
+            // Append the table to viccfeed
+            viccfeed.appendChild(table);
+        })
+        .catch(error => console.error('Fetch error:', error));
       }
-    });
-  })
-  .catch(error => console.error('Fetch error:', error));
+      // Attach an event listener to the filter button
+document.getElementById('filterButton').addEventListener('click', fetchFilteredJokes);
+
+// Fetch and display jokes on page load
+fetchFilteredJokes();
   </script>
   </body>
   </html>

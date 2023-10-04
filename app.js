@@ -61,10 +61,9 @@ app.post('/register', (req, res) => {
   db.query(sql, [username, password], (err, result) => {
     if (err) {
       console.error(err);
-      res.status(500).send('Error registering user');
     } else {
       console.log('User registered successfully');
-      res.redirect('Home.html');
+      res.redirect('Home.html?registerSuccess=true');
     }
 	
   });

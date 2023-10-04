@@ -27,6 +27,13 @@
         if (loginSuccess === 'false') {
             alert('Nem sikerült bejelentkezni!'); // Display an alert
         }
+
+        const urlParams2 = new URLSearchParams(window.location.search);
+        const registerSuccess = urlParams2.get('registerSuccess');
+  
+        if (registerSuccess === 'true') {
+            alert('Sikeres regisztrálás!'); // Display an alert
+        }
     </script>
 </body>
 </html>

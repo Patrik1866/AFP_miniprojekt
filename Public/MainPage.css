@@ -63,13 +63,17 @@ body {
 }
 
 .filter {
-  width: 100%;
+  width: 300px;
   padding: 10px;
-  border: none;
+  border:#34495e;
 }
 
 /* Style for category selection */
 select {
   width: 100%;
   padding: 10px;
+  border: #34495e;
+  background-color:#3498db;
+  color: white;
+  border-radius: 5pt;
 }

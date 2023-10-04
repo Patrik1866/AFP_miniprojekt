@@ -20,10 +20,7 @@
       <!-- Main content -->
       <div class="main-content">
           <!-- Feed -->
-          <div class="feed">
-              <!-- Replace this with code to fetch and display text from the database -->
-              <h1>Viccportál főoldal</h1>
-              <p>Itt lesznek a viccek</p>
+          <div class="feed" id="viccfeed">
           </div>
   
           <!-- Filter -->
@@ -55,6 +52,31 @@
       if (addSuccess === 'true'){
         alert('Sikeresen hozzáadtad a viccet!');
       }
+
+      fetch('/api/data')
+  .then(response => response.json())
+  .then(data => {
+    const viccfeed = document.getElementById('viccfeed');
+
+    // Clear any existing content in viccfeed
+    viccfeed.innerHTML = '';
+
+    // Iterate through the data and append jokes with spacing
+    data.forEach((item, index) => {
+      const jokeParagraph = document.createElement('p');
+
+      // Access the "vicc_tartalom" property and set it as the text content
+      jokeParagraph.textContent = item.vicc_tartalom;
+
+      viccfeed.appendChild(jokeParagraph);
+
+      // Add a line break after each joke, except for the last one
+      if (index < data.length - 1) {
+        viccfeed.appendChild(document.createElement('br'));
+      }
+    });
+  })
+  .catch(error => console.error('Fetch error:', error));
   </script>
   </body>
   </html>

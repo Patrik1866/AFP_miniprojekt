@@ -117,6 +117,18 @@ app.post('/vicc_add', (req, res) => {
   });
 });
 
+app.get('/api/data', (req, res) => {
+  // Query your database for the data
+  db.query('SELECT vicc_tartalom FROM viccek', (err, results) => {
+      if (err) {
+          console.error('Database query error: ' + err.message);
+          res.status(500).json({ error: 'Internal Server Error' });
+      } else {
+          res.json(results); // Send data as JSON response
+      }
+  });
+});
+
 // Start the server
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

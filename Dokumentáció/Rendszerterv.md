@@ -60,26 +60,30 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
 
 ## 6. Architekturális terv
 
-A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A bootstrap mint CSS keretrendszer felel a reszponzív webdesign-ért. A backend php alapú.
+A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A webes felület HTML, CSS és PHP nyelven fog elkészülni.
 
 ## 7. Adatbázis terv
 
 ### **Táblák**
-- **posts:** Az oldalon létrehozott bejegyzések
-  - **pid:** Azonosító szám, a bejegyzések egyedi azonosítója
-  - **title:** A bejegyzések címe
-  - **comment:** A bejegyzések tartalma
+- **vicc:** Az oldalon létrehozott viccek
+  - **id:** Azonosító szám, a viccek egyedi azonosítója
+  - **kategoria:** A viccek kategóriája
+  - **vicc_tartalom:** A viccek tartalma
 
+- **viccportal:** Az oldalon létrehozott user 
+  - **id:** Azonosító szám, a user egyedi azonosítója
+  - **username:** A user felhasználó neve
+  - **password:** A felhasználó által létrehozott jelszó
 
 **DSL**
 
 
 ```
 
-CREATE TABLE `posts` (
-  `pid` int(11) NOT NULL COMMENT 'A bejegyzések azonosító száma',
-  `title` varchar(100) NOT NULL COMMENT 'A bejegyzés címe',
-  `comment` text NOT NULL COMMENT 'A bejegyzés szöveges tartalma'
+CREATE TABLE `vicc` (
+  `id` int(11) NOT NULL COMMENT 'A viccek azonosító száma',
+  `kategoria` varchar(100) NOT NULL COMMENT 'A vicc kategoriája',
+  `vicc_tartalom` text NOT NULL COMMENT 'A viccek szöveges tartalma'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -90,11 +94,31 @@ ALTER TABLE `posts`
 
 
 ALTER TABLE `posts`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'A bejegyzések azonosító száma';
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'A viccek azonosító száma';
 COMMIT;
 
 ```
 
+```
+
+CREATE TABLE `viccportal` (
+  `id` int(11) NOT NULL COMMENT 'A user azonosító száma',
+  `username` varchar(100) NOT NULL COMMENT 'A felhasználó neve',
+  `password` varchar(100) NOT NULL COMMENT 'A jelszó tartalma'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`pid`);
+
+
+
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'A felhasználók azonosító száma';
+COMMIT;
+
+```
 
 **UML**
 

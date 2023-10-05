@@ -118,21 +118,25 @@ app.post('/vicc_add', (req, res) => {
 });
 
 app.get('/api/data', (req, res) => {
-  var category = [];
+  var category = req.query.category; // Access the "category" query parameter
+
   var sql = 'SELECT vicc_tartalom FROM viccek';
-  if(req.params.get("category") != null){
-    var category = [req.params.get("category")];
-    var sql = 'SELECT vicc_tartalom FROM viccek WHERE kategoria = ?';
+
+  if (category != null) {
+    var categoryValue = [category];
+    sql = 'SELECT vicc_tartalom FROM viccek WHERE kategoria = ?';
   }
-  db.query(sql, category, (err, results) => {
-      if (err) {
-          console.error('Database query error: ' + err.message);
-          res.status(500).json({ error: 'Internal Server Error' });
-      } else {
-          res.json(results); // Send data as JSON response
-      }
+
+  db.query(sql, categoryValue, (err, results) => {
+    if (err) {
+      console.error('Database query error: ' + err.message);
+      res.status(500).json({ error: 'Internal Server Error' });
+    } else {
+      res.json(results); // Send data as JSON response
+    }
   });
 });
+
 
 // Start the server
 const PORT = process.env.PORT || 4000;

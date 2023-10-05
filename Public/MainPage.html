@@ -73,17 +73,7 @@
             const table = document.createElement('table');
 
             // Create table header
-            const thead = document.createElement('thead');
-            const headerRow = document.createElement('tr');
-            const headers = ['ID', 'Kategória', 'Vicc Tartalom']; // Column headers
-            headers.forEach(headerText => {
-                const th = document.createElement('th');
-                th.textContent = headerText;
-                headerRow.appendChild(th);
-            });
-            thead.appendChild(headerRow);
-            table.appendChild(thead);
-
+            
             // Create table body
             const tbody = document.createElement('tbody');
             data.forEach(item => {
@@ -109,6 +99,9 @@ document.getElementById('filterButton').addEventListener('click', fetchFilteredJ
 // Fetch and display jokes on page load
 fetchFilteredJokes();
   </script>
+    <footer>
+      <p><a href="mailto:erdelyi.patrik99@gmail.com,bardosb02@gmail.com,gergo.koczka330@gmail.com" style="text-decoration: none;">Contact us</a></p>
+    </footer>
   </body>
   </html>
   

@@ -12,8 +12,8 @@
 
 Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás | Időpont
 --- | --- | --- | --- | --- | --- | --- 
-1 | Bejelentkezés | A bejelntkezés gomb átirányít a főoldalra  | Siker | - | Koczka Gergő | 2023.10.04.
-2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelntkezés oldalra  | Siker | - | Koczka Gergő | 2023.10.04.
+1 | Bejelentkezés | A bejelentkezés gomb átirányít a főoldalra  | Siker | - | Koczka Gergő | 2023.10.04.
+2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelentkezés oldalra  | Siker | - | Koczka Gergő | 2023.10.04.
 3 | Profil | A gomb megnyomására átirányít a megfelelő helyre  | Siker | - | Koczka Gergő | 2023.10.04.
 4 | Kijelentkezés | A felhasználó kijelentkezik majd átdob a bejelentkezés oldalra  | Siker | - | Koczka Gergő | 2023.10.04.
 5 | Feltöltés | A gomb megnyomására feltölti az adatbázisba a létrehozott viccet  | Siker | - | Koczka Gergő | 2023.10.04.
@@ -29,8 +29,8 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 
 Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás | Időpont
 --- | --- | --- | --- | --- | --- | --- 
-1 | Bejelentkezés | A bejelntkezés gomb átirányít a főoldalra  | Siker | - | Erdélyi Patrik | 2023.10.02.
-2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelntkezés oldalra  | Siker | - | Erdélyi Patrik | 2023.10.02.
+1 | Bejelentkezés | A bejelentkezés gomb átirányít a főoldalra  | Siker | - | Erdélyi Patrik | 2023.10.02.
+2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelentkezés oldalra  | Siker | - | Erdélyi Patrik | 2023.10.02.
 3 | Profil | A gomb megnyomására átirányít a megfelelő helyre  | Siker | - | Erdélyi Patrik | 2023.10.02.
 4 | Kijelentkezés | A felhasználó kijelentkezik majd átdob a bejelentkezés oldalra  | Siker | - | Erdélyi Patrik | 2023.10.02.
 5 | Feltöltés | A gomb megnyomására feltölti az adatbázisba a létrehozott viccet  | Siker | - | Erdélyi Patrik | 2023.10.02.
@@ -46,8 +46,8 @@ Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás 
 
 Lépés | Funkció | Tesztelés leírása | Státusz | Megjegyzés | Aláírás | Időpont
 --- | --- | --- | --- | --- | --- | --- 
-1 | Bejelentkezés | A bejelntkezés gomb átirányít a főoldalra  | Siker | - | Bárdos Botond  | 2023.10.03.
-2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelntkezés oldalra  | Siker | - | Bárdos Botond  | 2023.10.03.
+1 | Bejelentkezés | A bejelentkezés gomb átirányít a főoldalra  | Siker | - | Bárdos Botond  | 2023.10.03.
+2 | Regisztrálás | Felhasználó regisztrálása majd átirányít a bejelentkezés oldalra  | Siker | - | Bárdos Botond  | 2023.10.03.
 3 | Profil | A gomb megnyomására átirányít a megfelelő helyre  | Siker | - | Bárdos Botond  | 2023.10.03.
 4 | Kijelentkezés | A felhasználó kijelentkezik majd átdob a bejelentkezés oldalra  | Siker | - | Bárdos Botond  | 2023.10.03.
 5 | Feltöltés | A gomb megnyomására feltölti az adatbázisba a létrehozott viccet  | Siker | - | Bárdos Botond  | 2023.10.03.

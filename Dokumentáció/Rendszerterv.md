@@ -60,7 +60,7 @@ Ezeket a bejegyzéseket a weboldal eltárolja egy adatbázisban és láthatóvá
 
 ## 6. Architekturális terv
 
-A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A webes felület HTML, CSS és PHP nyelven fog elkészülni.
+A rendszer tökéletes működéséhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk. A webes felület HTML, CSS és JavaScript nyelven fog elkészülni, NodeJS futtató környezettel.
 
 ## 7. Adatbázis terv
 
@@ -126,7 +126,7 @@ COMMIT;
 
 ## 8. Implementációs terv
 
-A webes felület HTML, CSS és PHP nyelven fog elkészülni. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz. Az adatokat egy MYSQL adatbázisban fogjuk tárolni.
+A webes felület HTML, CSS és JavaScript nyelven fog elkészülni, NodeJS futtató környezettel. A különböző technológiákat amennyire csak lehet, külön fájlokba írva készítjük el, úgy csatoljuk egymáshoz ezzel is egy átláthatóbb, könnyebben változtatható és bővíthető weboldal lesz. Az adatokat egy MYSQL adatbázisban fogjuk tárolni.
 
 ## 9. Tesztterv
 

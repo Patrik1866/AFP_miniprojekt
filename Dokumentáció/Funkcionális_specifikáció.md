@@ -47,6 +47,10 @@ K3,K4,K5 gombokkal a felhasználó tud vicceket feltölteni, törölni, böngés
 ### Profil oldal
 ![Screenshot](profile_page.png)
 
+### Home oldal
+
+![HomePage](https://github.com/Patrik1866/AFP_miniprojekt/assets/114134915/344d3353-3ed6-4627-b29c-5e3ed6bba430)
+
 ## 9. Forgatókönyvek
 
 Az év bármely napján, bármely órában saját gondolatokat tölthet fel hogy mások is láthassák. 
